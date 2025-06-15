@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongWrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spitul <spitul@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/14 18:35:30 by spitul            #+#    #+#             */
-/*   Updated: 2025/06/15 10:41:50 by spitul           ###   ########.fr       */
+/*   Created: 2025/06/15 10:52:13 by spitul            #+#    #+#             */
+/*   Updated: 2025/06/15 10:53:28 by spitul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef WRONGANIMAL_HPP
+#define WRONGANIMAL_HPP
 
-#include "Animal.hpp"
+#define YLW "\033[38;2;228;217;111m"
+#define EGR "\033[38;2;80;200;120m"
+#define RST "\033[0m"
 
-class Cat	: public Animal
+#include <string>
+
+class WrongAnimal
 {
+	protected:
+		std::string	_type;
+		
 	public:
-		Cat(void);
-		Cat(const Cat& other);
-		Cat& operator=(const Cat& other);
-		~Cat(void);
+		WrongAnimal(void);
+		WrongAnimal(const WrongAnimal& other);
+		WrongAnimal& operator=(const WrongAnimal& other);
+		virtual ~WrongAnimal(void);
 
 		std::string	getType(void) const;
 
 		void	makeSound(void) const;
 };
+
 
 #endif

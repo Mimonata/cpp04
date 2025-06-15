@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongWrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: spitul <spitul@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/14 18:35:30 by spitul            #+#    #+#             */
-/*   Updated: 2025/06/15 10:41:50 by spitul           ###   ########.fr       */
+/*   Created: 2025/06/15 10:52:07 by spitul            #+#    #+#             */
+/*   Updated: 2025/06/15 11:04:59 by spitul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-#define CAT_HPP
+#ifndef WRONGCAT_HPP
+#define WRONGCAT_HPP
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-class Cat	: public Animal
+class WrongCat	: public WrongAnimal
 {
 	public:
-		Cat(void);
-		Cat(const Cat& other);
-		Cat& operator=(const Cat& other);
-		~Cat(void);
+		WrongCat(void);
+		WrongCat(const WrongCat& other);
+		WrongCat& operator=(const WrongCat& other);
+		~WrongCat(void);
 
 		std::string	getType(void) const;
 
